@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Expense Tracker</h1>
+    </header>
+    <section class="container">
+        <form id="addForm" action="">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <label for="expense_amount">Enter Expense Amount:</label>
+                    <input type="text" id="expense_amount">
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <label for="description">Enter Description:</label>
+                    <input type="text" id="description">
+                </div>
+                <div class="col-lg-4">
+                    <label for="category">Select Category:</label>
+                    <input list="categories" id="category">
+
+                    <datalist id="categories">
+                    <option value="Fuel">
+                    <option value="Food">
+                    <option value="Movie">
+                    <option value="Electricity">
+                    <option value="Rent">
+                    </datalist>
+                </div>
+            </div>
+          <input class="btn btn-dark" id="submit_form" type="submit" value="Submit">
+        </form>
+        <ul id="users" class="list-group">
+            
+        </ul>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
